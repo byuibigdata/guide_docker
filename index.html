@@ -59,30 +59,21 @@ class: center, middle
 
 # Agenda
 
-1. Introduction
-2. Docker Files
-3. Docker Build
-4. Docker Container
-5. Docker Hub
-6. Docker Application
+## Introduction
+## Docker Files
+## Docker Build
+## Docker Container
+## Docker Hub
+## Docker Application
 
 ---
 
 # Introduction
       
-### 1.1 What is Docker?
+### What is Docker?
       
 - An open-source software platform that debuted in 2013 with the purpose of creating, deploying, and managing virtual application containers on "common" operating system.
-
-
-      - Behold, The Whale.
-![![:scale 25%]](https://www.servernoobs.com/wp-content/uploads/2020/04/what-is-docker.jpg)
-      
-### 1.2 How does it work?
-      
-- Through containers, Docker packs, provides, and runs each application accordingly.
-      
-      - Technical Overview
+- It works through containers. Docker packs, provides, and runs each application accordingly.
 ![![:scale 25%]](https://www.docker.com/wp-content/uploads/2021/11/container-what-is-container.png)
 
 ---
@@ -91,13 +82,10 @@ class: center, middle
 
 ![![:scale 15%]](https://user-images.githubusercontent.com/59627216/159536551-599e8e2a-f4e5-4a3d-8d49-42ede1d9a365.png)
       
-
 ![![:scale 15%]](https://user-images.githubusercontent.com/59627216/159536991-19afc878-0b4e-43cd-9df4-f25f1b17aaf1.gif)
-      
-      
+       
 ![![:scale 15%]](https://miro.medium.com/max/1400/1*DXY4IoYbDhLrI9q6Z3LuYw.png)
-
-      
+    
 ---
 
 # Docker Build
@@ -120,25 +108,18 @@ docker rm <container-id>
 
 5. Refresh your browser. The contained built a moment ago is gone.
 
----
-
-# Docker Container
-
 --- 
 
 # Docker Hub
       
-### 5.1 docker push [OPTIONS] NAME[:TAG]
+```docker push [OPTIONS] NAME[:TAG]```
 - docker push behaves much like Github push does. It will push any changes made up to the image it is said to push to.
 - for the [OPTIONS], you have -a, -q, and --disable-content-trust
 - -a pushes all tagged images up to either your local repo or your cloud repo.
 - NAME is the name of your image. [:TAG] is whatever tag you want to give it, like a version number.
-      
-### 5.2 docker push
 - docker push MYIMAGE:VERSION // docker push myimage:1.0
 - If you push myimage:1.0, make a change, and then make a new one, myimage:1.1, you will be able to grab both versions, and run the differences in them. Remember, each push is a unique, read-only image. Keeping track of Version History is helpful, much like Github Commits
 
-### 5.3 Docker Hub
 - docker login --username=yourhubusername --email=youremail@company.com
 - After that, you'd be prompted to login. It'll save your password through the command line.
 - docker tag [IMAGEID] [DOCKERUSERNAME]/[IMAGENAME]:[VERSION] //// docker tag myimage tujianis/image:1.5.5
