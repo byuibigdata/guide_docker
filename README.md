@@ -169,7 +169,7 @@ If you want to remove it...
 - Learn how to create a free acount at https://aws.amazon.com/premiumsupport/knowledge-center/create-and-activate-aws-account/
 - Login to your account and search the AWS Console for Elastic Beanstalk. This is a service provided by AWS for managing cloud applications.
 - Create a new application and choose Docker as the platform.
-- Under the "Source Code Origin" section, upload the [Dockerrun.aws.json](https://github.com/kstathou/vector_engine/blob/master/Dockerrun.aws.json) file. Be sure and change the image name to your own username and imagename.
+- Under the "Source Code Origin" section, upload the [Dockerrun.aws.json](https://github.com/BYUI451/guide_docker/blob/main/Dockerrun.aws.json) file. Be sure and change the image name to your own username and imagename.
 - Choose the t2.micro instance if you are using the free tier. You will be charged for other options.
 
 
