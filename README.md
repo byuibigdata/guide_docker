@@ -56,6 +56,8 @@
 
 ### 2.3 Editing the docker file
 
+![Docker File Template]((https://miro.medium.com/max/1400/1*DXY4IoYbDhLrI9q6Z3LuYw.png) 
+
 - *Selecting which python version to use (The FROM instruction initializes a new build stage and sets the Base Image for subsequent instructions)*
 - FROM python:3.7
 - *Path to the image file* 
