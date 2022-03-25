@@ -118,7 +118,6 @@ Remove images by using the command below:
 
 
 ### 3.3 Further resources for understanding Images/Layers and its optimization.  
-
 - [Optimization with Multi-stage Builds](https://docs.docker.com/develop/develop-images/multistage-build/)
 - [Docker Layers Explained](https://dzone.com/articles/docker-layers-explained)
 - [Docker Development Best Practice](https://docs.docker.com/develop/dev-best-practices/)
