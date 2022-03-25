@@ -124,23 +124,24 @@ Remove images by using the command below:
 
 ## 4. Running the Container - Mireya Vera Loo
 
-### 4.1
+1. In VS Code, select Terminal > New Terminal.
 
--
--
--
+2. In the terminal window or a Bash window, run this command.
 
-### 4.2
+```docker run -d -p 80:80 docker/getting-started```
 
--
--
--
+If you want to remove it...
 
-### 4.3
+3. Run this command to get its container ID:
 
--
--
--
+```docker ps```
+
+4. Then stop and remove the container:
+   
+```docker stop <container-id>```
+```docker rm <container-id>```
+
+5. Refresh your browser. The contained built a moment ago is gone.
 
 ## 5. Pushing to the Docker Hub - Ben Hinchman 
 
