@@ -111,8 +111,28 @@ EXPOSE 8501 # The EXPOSE instruction tells Docker to get all its information req
 COPY . /app # Copy everything under the directory
 ENTRYPOINT ["streamlit", "run"] # Setting the entry point
 CMD ["main.py"] # Run file from the command line
+      
+---
 
 # Docker Build
+      
+1. In VS Code, select Terminal > New Terminal.
+
+2. In the terminal window or a Bash window, run this command.
+
+docker run -d -p 80:80 docker/getting-started
+
+If you want to remove it...
+
+3. Run this command to get its container ID:
+docker ps
+
+4. Then stop and remove the container:
+   
+docker stop <container-id>
+docker rm <container-id>
+
+5. Refresh your browser. The contained built a moment ago is gone.
 
 ---
 
